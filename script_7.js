@@ -36,15 +36,15 @@ if (question_user[question_user.length - 1] == "?") {
   console.log("Ouais ouais...");
 }
 
-else if(question_user === question_user.toUpperCase()) {
+else if (question_user === question_user.toUpperCase()) {
   console.log("OH, CALME TOI!");
 }
 
-else if(question_user.includes('Fortnite')){
+else if (question_user.includes('Fortnite')){
   console.log("on s' fait une partie soum-soum ?")
 }
 
-else if(!question_user === ""){
+else if (!question_user === ("")){
   console.log("t'es en PLS ?")
 }
 
