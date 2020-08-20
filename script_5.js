@@ -36,7 +36,7 @@ const books = [
   { title: 'Orgueil & Préjugés', id: 873495, rented: 67 },
   { title: 'Les frères Karamazov', id: 450911, rented: 55 },
   { title: 'Dans les forêts de Sibérie', id: 8376365, rented: 15 },
-  { title: 'Pourquoi j'ai mangé mon père', id: 450911, rented: 45 },
+  { title: 'Pourquoi jai mangé mon père', id: 450911, rented: 45 },
   { title: 'Et on tuera tous les affreux', id: 67565, rented: 36 },
   { title: 'Le meilleur des mondes', id: 88847, rented: 58 },
   { title: 'La disparition', id: 364445, rented: 33 },
@@ -47,7 +47,7 @@ const books = [
 
 //Est-ce que tous les livres ont été au moins empruntés une fois ?
 
-bookRente = []
+/*bookRente = []
 
 for(let index in books) {
 console.log(index);
@@ -58,9 +58,57 @@ console.log(bookRente[index]);
 if(bookRente[index] > 0) {
   console.log("Ce livre a été loué au moins une fois");
 } 
-}
+}*/
 
 //Quel est livre le plus emprunté ?
+
+/*let max = 0;
+let name = ""
+books.forEach(book => {
+  if (book.rented > max) {
+    max = book.rented;
+    name = book.title;
+  }
+});
+console.log(name + " " + max)*/
+
+//Quel est le livre le moins emprunté ?
+
+/*let minRented = books.reduce(function(prev, curr) {
+  return prev.rented < curr.rented ? prev :curr;
+});
+console.log(minRented)*/
+
+//Trouve le livre avec l'ID: 873495
+
+/*let find = 0;
+books.forEach(book => {
+  if (book.id > find) {
+    find = book.id;
+  }
+});
+console.log(find);
+
+//Supprime le livre avec l'ID: 133712 ;
+
+console.log(books.shift())
+console.log(books)*/
+
+//Trie les livres par ordre alphabétique 
+//(sans celui avec l'ID 133712 car il est supprimé).
+
+/*let orderTitles = [];
+
+books.forEach((book) => {
+  orderTitles.push(book.title);
+});
+
+console.log(orderTitles.sort());*/
+
+
+
+
+
 
 
 
